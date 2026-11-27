@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover books on BookNest. Search books by title, author, or subject.">
+    <title>Discover Books | BookNest</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script type="module" src="js/search.mjs"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Book<span>Nest</span></a>
+
+            <nav id="main-nav" class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="search.html" class="active">Discover</a>
+                <a href="library.html">My Library</a>
+            </nav>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-page container">
+            <div class="search-heading">
+                <p class="eyebrow">YOUR NEXT GREAT READ</p>
+                <h1>Discover Your Next Book</h1>
+                <p>Search thousands of books and find something worth reading.</p>
+            </div>
+
+            <form id="book-search-form" class="book-search-form">
+                <input type="search" id="book-search-input" placeholder="Search by title, author, or subject..."
+                    aria-label="Search books" required>
+                <button type="submit">Search Books</button>
+            </form>
+
+            <p id="search-message" aria-live="polite">
+                Enter a book title, author, or subject to get started.
+            </p>
+
+            <section class="search-results-section">
+                <div id="search-results" class="book-grid"></div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> BookNest. Discover. Organize. Read.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

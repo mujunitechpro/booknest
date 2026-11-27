@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your free BookNest account and organize your reading journey.">
+    <title>Create Account | BookNest</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">BookNest</a>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav" class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="search.html">Discover</a>
+                <a href="library.html">My Library</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="auth-page">
+        <section class="auth-container">
+            <div class="auth-heading">
+                <h1>Join BookNest</h1>
+                <p>Create your account and start your reading journey.</p>
+            </div>
+
+            <form id="register-form" class="auth-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="fullName" placeholder="Enter your full name"
+                        autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password"
+                        autocomplete="new-password" minlength="6" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirmPassword"
+                        placeholder="Enter your password again" autocomplete="new-password" minlength="6" required>
+                </div>
+
+                <p id="register-message" class="auth-message" aria-live="polite"></p>
+
+                <button type="submit" id="register-button" class="auth-button">
+                    Create Account
+                </button>
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="login.html">Log in</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> BookNest. Discover. Organize. Read.</p>
+    </footer>
+
+    <script type="module" src="js/register.mjs"></script>
+</body>
+
+</html>

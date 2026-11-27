@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage your personal reading library on BookNest.">
+    <title>My Library | BookNest</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script type="module" src="js/library.mjs"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Book<span>Nest</span></a>
+
+            <nav id="main-nav" class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="search.html">Discover</a>
+                <a href="library.html" class="active">My Library</a>
+                <button id="logout-button" class="logout-button">Logout</button>
+            </nav>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main class="container library-page">
+        <section class="library-heading">
+            <p class="eyebrow">YOUR PERSONAL READING SPACE</p>
+            <h1>My Library</h1>
+            <p>Organize your books and keep track of your reading journey.</p>
+        </section>
+
+        <section class="library-summary">
+            <div class="library-stat">
+                <h2 id="total-books">0</h2>
+                <p>Total Books</p>
+            </div>
+
+            <div class="library-stat">
+                <h2 id="want-to-read-count">0</h2>
+                <p>Want to Read</p>
+            </div>
+
+            <div class="library-stat">
+                <h2 id="currently-reading-count">0</h2>
+                <p>Currently Reading</p>
+            </div>
+
+            <div class="library-stat">
+                <h2 id="completed-count">0</h2>
+                <p>Completed</p>
+            </div>
+        </section>
+
+        <section class="library-books-section">
+            <div class="library-section-heading">
+                <h2>My Books</h2>
+
+                <label for="status-filter">Filter by status:</label>
+                <select id="status-filter">
+                    <option value="All">All Books</option>
+                    <option value="Want to Read">Want to Read</option>
+                    <option value="Currently Reading">Currently Reading</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Favorites">Favorites</option>
+                </select>
+            </div>
+
+            <p id="library-message" aria-live="polite"></p>
+
+            <div id="library-books" class="book-grid"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> BookNest. Discover. Organize. Read.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
