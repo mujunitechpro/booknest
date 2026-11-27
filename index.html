@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover books, organize your reading and build a lifelong reading habit with BookNest.">
+    <title>BookNest | Discover Your Next Favorite Book</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script type="module" src="js/main.mjs"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">B</span>
+                <span>Book<span class="logo-highlight">Nest</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="search.html">Discover</a>
+                <a href="library.html">My Library</a>
+                <a href="#categories">Categories</a>
+                <a href="#" class="login-link">Login</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="eyebrow">WELCOME TO YOUR READING SPACE</span>
+
+                    <h1>Discover your next <span>favorite book.</span></h1>
+
+                    <p>
+                        Find stories that inspire, knowledge that empowers,
+                        and books that open new worlds.
+                    </p>
+
+                    <form class="search-form" id="home-search">
+                        <input type="search" id="home-search-input" placeholder="Search books, authors or subjects..."
+                            aria-label="Search books, authors or subjects" required>
+                        <button type="submit">Search</button>
+                    </form>
+
+                    <div class="hero-note">
+                        <span>Explore.</span>
+                        <span>Discover.</span>
+                        <span>Grow.</span>
+                    </div>
+                </div>
+
+                <div class="hero-art">
+                    <div class="book-decoration book-one"></div>
+                    <div class="book-decoration book-two"></div>
+                    <div class="book-decoration book-three"></div>
+                    <div class="hero-circle">
+                        <span>Read more.</span>
+                        <strong>Live more.</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section class="section categories-section" id="categories">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">EXPLORE YOUR INTERESTS</span>
+                        <h2>Browse Categories</h2>
+                    </div>
+                    <a href="search.html" class="text-link">Explore all books →</a>
+                </div>
+
+                <div class="category-grid">
+
+                    <a href="search.html?category=fiction" class="category-card">
+                        <span>📖</span>
+                        <h3>Fiction</h3>
+                        <p>Stories and imagination</p>
+                    </a>
+
+                    <a href="search.html?category=business" class="category-card">
+                        <span>💼</span>
+                        <h3>Business</h3>
+                        <p>Ideas and entrepreneurship</p>
+                    </a>
+
+                    <a href="search.html?category=technology" class="category-card">
+                        <span>💻</span>
+                        <h3>Technology</h3>
+                        <p>Innovation and computing</p>
+                    </a>
+
+                    <a href="search.html?category=history" class="category-card">
+                        <span>🏛️</span>
+                        <h3>History</h3>
+                        <p>Discover the past</p>
+                    </a>
+
+                    <a href="search.html?category=science" class="category-card">
+                        <span>🔬</span>
+                        <h3>Science</h3>
+                        <p>Explore the universe</p>
+                    </a>
+
+                    <a href="search.html?category=personal development" class="category-card">
+                        <span>🌱</span>
+                        <h3>Personal Growth</h3>
+                        <p>Become your best self</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED BOOKS -->
+        <section class="section featured-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">A WORLD OF KNOWLEDGE</span>
+                        <h2>Discover Great Books</h2>
+                        <p>Explore books and find something worth reading.</p>
+                    </div>
+                    <a href="search.html" class="text-link">Discover more →</a>
+                </div>
+
+                <div class="book-grid" id="featured-books">
+
+                    <div class="book-placeholder">
+                        <div class="book-cover cover-green">The Power of Reading</div>
+                        <h3>Discover Something New</h3>
+                        <p>Explore books waiting for you.</p>
+                    </div>
+
+                    <div class="book-placeholder">
+                        <div class="book-cover cover-gold">Knowledge Is Power</div>
+                        <h3>Grow Your Knowledge</h3>
+                        <p>Find ideas that inspire you.</p>
+                    </div>
+
+                    <div class="book-placeholder">
+                        <div class="book-cover cover-blue">A World of Stories</div>
+                        <h3>Explore New Worlds</h3>
+                        <p>Let every book take you somewhere.</p>
+                    </div>
+
+                    <div class="book-placeholder">
+                        <div class="book-cover cover-red">Your Next Chapter</div>
+                        <h3>Start Reading Today</h3>
+                        <p>Build a habit that lasts.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta-section">
+            <div class="container cta-content">
+                <div>
+                    <span class="eyebrow">YOUR READING JOURNEY STARTS HERE</span>
+                    <h2>Every great journey begins with a book.</h2>
+                    <p>Discover books, save your favorites and keep track of your reading journey.</p>
+                </div>
+                <a href="search.html" class="cta-button">Explore Books</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-icon">B</span>
+                <span>Book<span class="logo-highlight">Nest</span></span>
+            </a>
+
+            <p>Discover. Organize. Read.</p>
+            <p class="copyright">
+                &copy; <span id="current-year"></span> BookNest. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
